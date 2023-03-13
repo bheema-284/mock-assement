@@ -11,3 +11,30 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.container{
+  display: flex;
+  margin: auto;
+  justify-content: space-around;
+  background-color: lightcoral;
+  padding: 20px;
+  width: 95%;
+}
+.dashboad{  
+  color: black;
+}
+.sidebar{
+  text-align: left;
+  margin-left: 50px;
+  display: flex;
+  gap: 10px;
+  height: 200px;
+  cursor: pointer;
+}
+.dashboard_news{
+  display: flex;
+  justify-content: space-between;
+}
+.news_cont{
+  display: flex;
+  justify-content: space-between;
+}

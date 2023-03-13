@@ -1,16 +1,16 @@
 import React from 'react'
 import Dashboard from '../Components/Dashboard'
-import Navbar from '../Components/Navbar'
 import SearchResults from '../Components/SearchResults'
-import Sidebar from '../Components/Sidebar'
-
-export default function AllRoutes() {
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+export default function AllRoutes(props) {
     return (
-        <div>
-            <Dashboard/>
-            <Navbar/>
-            <SearchResults/>
-            <Sidebar/>
+        <div>                    
+            <BrowserRouter>
+            <Routes>
+        <Route path="/" element={ <Dashboard/> }/>
+        <Route path="/search" element={ <SearchResults  /> }/>
+      </Routes>
+      </BrowserRouter>
         </div>
     )
 }
